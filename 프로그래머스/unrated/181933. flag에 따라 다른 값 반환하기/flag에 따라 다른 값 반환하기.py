@@ -1,6 +1,3 @@
 def solution(a, b, flag):
-    if flag == True:
-        answer = a + b
-    else:
-        answer = a - b
-    return answer
+    if flag : return a + b
+    return a - b
