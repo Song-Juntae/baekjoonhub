@@ -1,0 +1,5 @@
+a = int(input())
+b = input()
+b1,b2,b3 = map(int, list(b))
+b = int(b)
+print(f'{a*b3}\n{a*b2}\n{a*b1}\n{a*b}')
