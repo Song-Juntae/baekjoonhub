@@ -1,2 +1,2 @@
 def solution(strArr):
-    return [i.lower() if strArr.index(i) % 2 == 0 else i.upper() for i in strArr]
+    return [str.lower() if idx % 2 == 0 else str.upper() for idx, str in enumerate(strArr)]
