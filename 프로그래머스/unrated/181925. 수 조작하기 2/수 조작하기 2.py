@@ -5,4 +5,4 @@ def solution(numLog):
         10: 'd',
         -10: 'a'
     }
-    return "".join([dic[numLog[idx+1] - i] if idx < len(numLog)-1 else "" for idx, i in enumerate(numLog)])
+    return "".join([dic[numLog[i+1] - numLog[i]] for i in range(len(numLog)-1)])
