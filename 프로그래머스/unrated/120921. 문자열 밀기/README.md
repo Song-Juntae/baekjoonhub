@@ -1,6 +1,6 @@
 # [level unrated] 문자열 밀기 - 120921 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120921) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120921?language=python3) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 3일 22:28:14
+2023년 10월 3일 22:29:31
 
 ### 문제 설명
 
