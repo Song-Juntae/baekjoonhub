@@ -17,9 +17,10 @@ def solution(genres, plays):
     genres_play = OrderedDict(sorted(genres_play.items(), key=lambda x:x[1], reverse=True))
     
     for i in genres_play:
+        _ = [k[0] for k in sorted(songs[i], key=lambda x: x[1], reverse=True)]
         for j in range(2):
             try:
-                answer.append([k[0] for k in sorted(songs[i], key=lambda x: x[1], reverse=True)][j])
+                answer.append(_[j])
             except:
                 pass
     return answer
