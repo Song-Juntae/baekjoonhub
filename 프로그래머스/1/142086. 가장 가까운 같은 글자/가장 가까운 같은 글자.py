@@ -1,2 +1,12 @@
 def solution(s):
-    return [s[:i][::-1].find(s[i])+1 if s[:i][::-1].find(s[i]) != -1 else s[:i][::-1].find(s[i])  for i in range(len(s))]
+    answer = []
+    dic = dict()
+    for i in range(len(s)):
+        _ = s[i]
+        if _ not in dic:
+            answer.append(-1)
+            dic[_] = i
+        else:
+            answer.append(i - dic[_])
+            dic[_] = i
+    return answer
