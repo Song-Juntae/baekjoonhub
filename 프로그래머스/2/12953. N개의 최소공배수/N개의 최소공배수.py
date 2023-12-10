@@ -1,9 +1,8 @@
-from math import prod
+from math import gcd
 
 def solution(arr):
-    maxarr = max(arr)
-    for i in range(1,prod(arr)):
-        h = maxarr*i
-        if all(h%a == 0 for a in arr):
-            return h
+    answer = arr[0]
+    for i in arr[1:]:
+        answer = answer*i // gcd(answer,i)
+    return answer
             
